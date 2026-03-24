@@ -5,94 +5,78 @@
 
   <style>
    
-    body {
-  max-width: 1400px;
-  margin: 0 auto; 
+   /* CENTERED PAGE */
+body {
   font-family: Georgia, "Times New Roman", serif;
   margin: 0;
   background-color: #ffffff;
   color: #222;
-  line-height: 1.6;
-  display: flex;
 }
 
-/* SIDEBAR 
-    .sidebar {
+.container {
+  display: flex;
+  max-width: 1300px;
+  margin: 0 auto;   /* 👈 centers everything */
+}
+
+/* SIDEBAR */
+.sidebar {
   width: 25%;
   max-width: 320px;
-  min-width: 240px;
+  min-width: 260px;
   padding: 40px 25px;
-  position: fixed;
-  top: 0;
-  left: calc((100% - 1400px) / 2);  /* 👈 aligns with centered layout */
   height: 100vh;
-  overflow-y: auto;
+  position: sticky;   /* 👈 better than fixed */
+  top: 0;
   border-right: 1px solid #e5e7eb;
   background-color: #fafafa;
 }
-   
-   
+
 .sidebar img {
-  width: 120px;
-  max-width: 100px;   /* 👈 prevents it from becoming too huge on big screens */
-  min-width: 100px;   /* 👈 keeps it decent on small screens */
+  width: 160px;
   border-radius: 50%;
-  margin-bottom: 20px;
- 
+  display: block;
+  margin: 0 auto 20px auto;
 }
-    .sidebar h2 {
-  font-size: 24px;
-  font-weight: 500;   /* 👈 less bold, more academic */
-  color: #222;        /* 👈 match main */
+
+.sidebar h2 {
+  font-size: 22px;
+  color: #222;
   margin-bottom: 8px;
 }
 
 .sidebar p {
-  font-size: 16px;    /* 👈 match main readability */
-  color: #222;        /* 👈 same as body */
+  font-size: 15px;
+  color: #222;
   margin: 4px 0;
 }
 
-.sidebar nav a {
-  font-size: 16px;
-  color: #222;
-  margin-bottom: 12px;
-}
-
-
-
-.sidebar p a:hover {
-  text-decoration: underline;
+.sidebar p a {
+  color: #2563eb;
+  text-decoration: none;
 }
 
 .sidebar nav {
-  margin-top: 35px;
+  margin-top: 30px;
 }
 
 .sidebar nav a {
   display: block;
   margin-bottom: 12px;
-  color: #444;
+  font-size: 15px;
+  color: #222;
   text-decoration: none;
-  font-size: 20px;
-}
-
-.sidebar nav a:hover {
-  color: #000;
 }
 
 /* MAIN CONTENT */
-    .main {
-  margin-left: calc(25% + 60px);
-  padding: 60px 80px;
-  max-width: 900px;   /* 👈 wider content */
-  line-height: 1.7;
+.main {
+  width: 75%;
+  padding: 60px 60px;
+  max-width: 900px;
 }
-   
-
 
 section {
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 h2 {
@@ -103,9 +87,8 @@ h2 {
 }
 
 h3 {
+  font-size: 16px;
   margin-bottom: 5px;
-  font-size: 17px;
-  font-weight: bold;
 }
 
 .card {
@@ -113,7 +96,7 @@ h3 {
 }
 
 ul {
-  padding-left: 22px;
+  padding-left: 20px;
 }
 
 a {
