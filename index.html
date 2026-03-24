@@ -4,7 +4,10 @@
   <title>Suruchi Dixit | Molecular Biologist</title>
 
   <style>
+   
     body {
+  max-width: 1400px;
+  margin: 0 auto; 
   font-family: Georgia, "Times New Roman", serif;
   margin: 0;
   background-color: #ffffff;
@@ -21,12 +24,13 @@
   padding: 40px 25px;
   position: fixed;
   top: 0;
-  left: 40px;   /* 👈 push sidebar right */
+  left: calc((100% - 1400px) / 2);  /* 👈 aligns with centered layout */
   height: 100vh;
   overflow-y: auto;
   border-right: 1px solid #e5e7eb;
   background-color: #fafafa;
 }
+   
    
 .sidebar img {
   width: 120px;
@@ -79,12 +83,12 @@
 
 /* MAIN CONTENT */
     .main {
-  margin-left: calc(25% + 60px);  /* 👈 match sidebar shift */
-  padding: 50px 80px;
-  max-width: 1000px;
-  box-sizing: border-box;
+  margin-left: calc(25% + 60px);
+  padding: 60px 80px;
+  max-width: 900px;   /* 👈 wider content */
+  line-height: 1.7;
 }
-
+   
 
 
 section {
