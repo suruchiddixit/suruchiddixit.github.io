@@ -13,43 +13,46 @@
   display: flex;
 }
 
-/* SIDEBAR */
-.sidebar {
-  width: 35%;
-  max-width: 320px;   /* prevents it from getting too big on large screens */
+/* SIDEBAR 
+    .sidebar {
+  width: 25%;
+  max-width: 320px;
   min-width: 240px;
   padding: 40px 25px;
   position: fixed;
   top: 0;
-  left: 0;
+  left: 40px;   /* 👈 push sidebar right */
   height: 100vh;
   overflow-y: auto;
-  border-right: 3px solid #e5e7eb;
+  border-right: 1px solid #e5e7eb;
   background-color: #fafafa;
 }
+
 .sidebar img {
   width: 160px;
   border-radius: 10%;
   margin-bottom: 10px;
 }
-
-.sidebar h2 {
-  font-size: 15px;
+    .sidebar h2 {
+  font-size: 24px;
+  font-weight: 500;   /* 👈 less bold, more academic */
+  color: #222;        /* 👈 match main */
   margin-bottom: 8px;
-  color: #111;
 }
 
 .sidebar p {
-  font-size: 15px;
-  color: #555;
+  font-size: 16px;    /* 👈 match main readability */
+  color: #222;        /* 👈 same as body */
   margin: 4px 0;
 }
 
-.sidebar p a {
-  font-size: 14px;
-  color: #2563eb;
-  text-decoration: none;
+.sidebar nav a {
+  font-size: 16px;
+  color: #222;
+  margin-bottom: 12px;
 }
+
+
 
 .sidebar p a:hover {
   text-decoration: underline;
