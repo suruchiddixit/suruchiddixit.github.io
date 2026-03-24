@@ -21,13 +21,13 @@
   padding: 40px 25px;
   position: fixed;
   top: 0;
-  left: 50px;   /* 👈 push sidebar right */
+  left: 40px;   /* 👈 push sidebar right */
   height: 100vh;
   overflow-y: auto;
   border-right: 1px solid #e5e7eb;
   background-color: #fafafa;
 }
-
+   
 .sidebar img {
   width: 120px;
   max-width: 100px;   /* 👈 prevents it from becoming too huge on big screens */
@@ -79,12 +79,12 @@
 
 /* MAIN CONTENT */
     .main {
-  margin-left: 25%;
-  padding: 50px 80px;   /* more breathing room */
-  max-width: 800px;    /* wider content area */
-  line-height: 1.7;
+  margin-left: calc(25% + 60px);  /* 👈 match sidebar shift */
+  padding: 50px 80px;
+  max-width: 1000px;
   box-sizing: border-box;
 }
+
 
 
 section {
