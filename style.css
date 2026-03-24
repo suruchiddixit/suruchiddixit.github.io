@@ -1,0 +1,75 @@
+/* GLOBAL */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #222;
+}
+
+/* LAYOUT */
+.container {
+  display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  position: fixed;
+  background: #f8f9fa;
+  padding: 30px;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.tagline {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.sidebar nav a {
+  display: block;
+  margin: 10px 0;
+  text-decoration: none;
+  color: #333;
+}
+
+.sidebar nav a:hover {
+  color: #007acc;
+}
+
+/* MAIN CONTENT */
+.content {
+  margin-left: 300px;
+  padding: 40px;
+  max-width: 800px;
+}
+
+/* HEADINGS */
+h2 {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+  margin-top: 40px;
+}
+
+h3 {
+  margin-bottom: 5px;
+}
+
+/* TEXT */
+.sub {
+  color: gray;
+  margin-top: -5px;
+}
+
+/* LISTS */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 6px;
+}
